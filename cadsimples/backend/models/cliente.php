@@ -41,4 +41,14 @@ while ($lines = mysqli_fetch_assoc ($result)) {
 
 }
 
+function if_title_cadatt(){
+    if ($_GET['id']== null){
+    echo "<title> Cadastro de Cientes </title>";
+}
+else {
+    echo "<title> Atualizar Informação </title>";
+} 
+    
+}
+
 ?>

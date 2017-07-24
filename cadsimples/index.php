@@ -4,7 +4,9 @@ require_once ("hf/header.php");
 <?php
 require_once ("backend/models/cliente.php");
 ?>             
-
+<title>Tabela de Clientes</title>
+<div id="page-wrapper">
+      <div id="content" class="container-fluid container-ssf container-frescuras">
             <div class="row">
                 <div class="table-responsive">
                     <table class="table">

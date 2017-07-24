@@ -7,10 +7,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
     <style type="text/css">
-
-
       </style>
       <link href="<?php call_css()?>bootstrap.min.css" rel="stylesheet">
       <link href="<?php call_css()?>design.css" rel="stylesheet">
@@ -54,9 +51,7 @@
                 </div>
               </div>
             <!-- / -->
-                   <!-- Pagina -->
-  <div id="page-wrapper">
-      <div class="container-fluid container-ssf container-frescuras">
+
             
 
    

@@ -2,19 +2,14 @@
 <?php
 require_once ("hf/header.php");
 ?>
-
-<?php 
-if ($_GET['id']== null){
-    echo "<title> CADASTRO </title>";
-}
-else {
-    echo "<title> ATT</title>";
-} ?>
-
 <?php
 require_once ("backend/models/cliente.php");
-?>             
+?> 
 
+<?php if_title_cadatt()?>
+                   <!-- Pagina -->
+  <div id="page-wrapper">
+      <div id="content" class="container-fluid container-ssf container-frescuras">
         <div class="row">
                
                 <div class="col-lg-12 nav-padding">

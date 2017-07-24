@@ -172,6 +172,10 @@ line-height:40px;
 .container-ssf{
     background-color:#FFF; /*Cor de fundo Conteudo*/
 }
+.container-cadastro{
+    border-bottom-right-radius:0; 
+    border-bottom-left-radius:0; 
+}
 
 
 
@@ -230,6 +234,7 @@ line-height:40px;
 .panel-primary>.panel-heading{
     background-color:#0069d2;
     border-color:#0069d2;
+    padding: 8px 15px;
 }
 
 .panel-links{
@@ -266,4 +271,12 @@ line-height:40px;
 }
 textarea{
     resize: none;
+}
+
+
+
+/*TABELA RESPONSIVA */
+
+.table-responsive{
+    border:0;
 }
