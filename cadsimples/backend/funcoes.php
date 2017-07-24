@@ -13,6 +13,10 @@ function call_img(){
     echo "/cadsimples/frontend/images/";
 }
 
+function call_page(){
+    
+    echo "/cadsimples/";
+}
 
 ?>
 

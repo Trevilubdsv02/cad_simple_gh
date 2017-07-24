@@ -9,7 +9,7 @@ $("#menu-toglle").click(function() {
     setTimeout(function() {
         $("#sidebar-wrapper").toggleClass("zz-dex1");
         $("#sidebar-wrapper").toggleClass("zz-dex2");
-    }, 170);
+    }, 150);
 });
 
 //

@@ -49,7 +49,7 @@
                     <ul class="sidebar-nav">
                         <li><a href="index.php" class=""> <span  class="glyphicon glyphicon-th-list sidebar-icons"></span> Tabela</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="<?php  ?>"><span  class="glyphicon glyphicon-user sidebar-icons"></span> Cadastro</a></li>
+                        <li><a href="<?php call_page()?>form_clientes.php"><span  class="glyphicon glyphicon-user sidebar-icons"></span> Cadastro</a></li>
                     </ul>
                 </div>
               </div>

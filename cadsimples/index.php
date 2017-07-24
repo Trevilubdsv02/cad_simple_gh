@@ -6,7 +6,7 @@ require_once ("backend/models/cliente.php");
 ?>             
 
             <div class="row">
-                <div class="col-lg-12">
+                <div class="table-responsive">
                     <table class="table">
                            <thead>
                                <tr>
@@ -14,11 +14,11 @@ require_once ("backend/models/cliente.php");
                                    <th>Nome Fantasia</th>
                                    <th>Razao Social</th>
                                    <th>Cnpj</th>
-                                   <th>Empresa Atendente</th>
+                                   <th>Emp. Atendente</th>
                                    <th>Setor</th>
                                    <th>Função</th>
-                                   <th>Ramo de Atividade</th>
-                                   <th>Data de Cadastro</th>
+                                   <th>Ramo Atividade</th>
+                                   <th>Data Cadastro</th>
                                    <th></th>
                                </tr>
                            </thead>
@@ -35,7 +35,7 @@ require_once ("backend/models/cliente.php");
                            </tbody>
                                                    
                     </table>
-          <a href="#" class="btn trev_azul trev_azul_f btn-plus-table">
+          <a href="form_clientes.php" class="btn trev_azul trev_azul_f btn-plus-table">
             <span class=" glyphicon glyphicon-plus trev_branco"></span>
           </a>
                 </div>
