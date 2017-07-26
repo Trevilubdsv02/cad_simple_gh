@@ -37,9 +37,9 @@ require_once ("backend/models/cliente.php");
                            </tbody>
                                                    
                     </table>
-          <a href="form_clientes.php" class="btn trev_azul trev_azul_f btn-plus-table">
-            <span class=" glyphicon glyphicon-plus trev_branco"></span>
-          </a>
+                  <a href="form_clientes.php" class="btn trev_azul trev_azul_f btn-plus-table">
+                    <span class=" glyphicon glyphicon-plus trev_branco"></span>
+                  </a>
                 </div>
             </div>
 <?php
