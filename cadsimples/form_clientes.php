@@ -56,7 +56,7 @@ require_once ("backend/models/cliente.php");
                                     <option>Telefone Corporativo</option>
                                     <option>Rádio</option>
                                     <option>Ramal</option>
-                                    <option>Site</option>
+                                    <option></option>
                                 </select>
                             </div>
                          </div>
@@ -136,14 +136,34 @@ require_once ("backend/models/cliente.php");
             </div> <!--//TAB REFERENCIA COMERCIAL   -->
     
                 <div id="dados_empresa" class="tab-pane fade"> <!-- TAB DADOS EMPRESA  -->
-                  <h3>Menu 1</h3>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <h3>Menu 1</h3>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <h3>Menu 1</h3>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <h3>Menu 1</h3>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                   <div class="container-fluid">  <!--container de campos formulario   -->
+                     <form action="" class=""> 
+                       <div class="row">
+                        
+                        <div class="form-group row margin-top-5">  
+                            <div class=" col-xs-12">                
+                               <div class="input-group">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                                  <input type="text" class="form-control input-md" disabled placeholder="Enviar Imagem">
+                                  <span class="input-group-btn">
+                                    <button class="browse btn btn-primary input-md" type="button"><i class="glyphicon glyphicon-search"></i> Procurar</button>
+                                  </span>
+                               </div>
+                             </div>  
+                        </div>                         
+                        <div class="form-group row ">  
+                            <div class="padding-right-5 col-xs-6"> 
+                                <label for="txt_social_name">Razão Social</label>
+                                <input class="form-control" id="txt_social_name" type="text">
+                            </div>  
+                            <div class="padding-left-5 col-xs-6"> 
+                                <label for="txt_social_name_previous">Razão Social Anterior</label>
+                                <input class="form-control" id="txt_social_name_previous" type="text">
+                            </div> 
+                        </div>  
+                       </div>
+                     </form>  
+                    </div>  
                 </div> <!-- //TAB DADOS EMPRESA  -->
 
                 <div id="dados_pedido" class="tab-pane fade"> <!-- TAB DADOS PEDIDO  -->
