@@ -19,7 +19,7 @@ INNER JOIN empresas ON clientes.id_empresa = empresas.id
 inner join funcoes on clientes.id_funcao = funcoes.id
 inner join ramo_atividades on clientes.id_ramo_atividade = ramo_atividades.id
 order by 'id'");
-
+             
 $lines = mysqli_num_rows($result);
 
 while ($lines = mysqli_fetch_assoc ($result)) {

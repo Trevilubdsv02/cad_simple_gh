@@ -56,7 +56,6 @@ require_once ("backend/models/cliente.php");
                                     <option>Telefone Corporativo</option>
                                     <option>Rádio</option>
                                     <option>Ramal</option>
-                                    <option></option>
                                 </select>
                             </div>
                          </div>
@@ -68,7 +67,6 @@ require_once ("backend/models/cliente.php");
                                            <a class="panel-links" data-toggle="collapse" href="#collapse0"> Referência Bancária <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
                                        </h1>
                                   </div>
-
                                    <div id="collapse0" class="panel-collapse collapse">
                                        <div class="panel-body">
                                     <!--Formulario Referencia bancaria/collapse  -->
@@ -134,19 +132,17 @@ require_once ("backend/models/cliente.php");
                   </form>
                 </div>
             </div> <!--//TAB REFERENCIA COMERCIAL   -->
-    
                 <div id="dados_empresa" class="tab-pane fade"> <!-- TAB DADOS EMPRESA  -->
                    <div class="container-fluid">  <!--container de campos formulario   -->
                      <form action="" class=""> 
                        <div class="row">
-                        
-                        <div class="form-group row margin-top-5">  
+                           <div class="form-group row margin-top-5">  
                             <div class=" col-xs-12">                
                                <div class="input-group">
                                   <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
                                   <input type="text" class="form-control input-md" disabled placeholder="Enviar Imagem">
                                   <span class="input-group-btn">
-                                    <button class="browse btn btn-primary input-md" type="button"><i class="glyphicon glyphicon-search"></i> Procurar</button>
+                                    <button class="browse btn btn-primary input-md trev_azul_claro" type="button"><i class="glyphicon glyphicon-search"></i> Procurar</button>
                                   </span>
                                </div>
                              </div>  
@@ -160,18 +156,155 @@ require_once ("backend/models/cliente.php");
                                 <label for="txt_social_name_previous">Razão Social Anterior</label>
                                 <input class="form-control" id="txt_social_name_previous" type="text">
                             </div> 
-                        </div>  
-                       </div>
+                        </div>
+                        <div class="form-group row "> <!--l3   --> 
+                        <div class="col-xs-6 padding-right-5">
+                                <label for="txt_flag">Bandeira</label>
+                                <input class="form-control" id="txt_flag" type="text">
+                        </div>
+                        <div class="col-xs-6 padding-left-5">
+                                <label for="sel_client_type">Tipo Cliente</label>
+                                <select class="form-control input-md padding-left-5" id="sel_client_type">
+                                    <option>Preencher no banco</option>
+                                    <option>Preencher no banco</option>
+                                    <option>Preencher no banco</option>
+                                </select>
+                        </div>
+                        </div>
+                        <div class="form-group row "> <!--l4   --> 
+                        <div class="col-xs-4 padding-right-5">
+                                <label for="sel_trevilub_company">Trevilub Empresa</label>
+                                <select class="form-control input-md padding-left-5" id="sel_trevilub_company">
+                                    <option>Americana</option>
+                                    <option>Vale</option>
+                                </select>
+                        </div>
+                        <div class="col-xs-4 padding-leftright-5">
+                                <label for="sel_visit_frequency">Frequência da Visita</label>
+                                <select class="form-control input-md padding-left-5" id="sel_visit_frequency">
+                                    <option>A Cada X Dias</option>
+                                    <option>A Cada Y Dias</option>
+                                    <option>A Cada Z Dias</option>
+                                </select>
+                        </div>
+                        <div class="col-xs-4 padding-left-5">
+                                <label for="sel_visit_day">Dia da Visita</label>
+                                <select class="form-control input-md padding-left-5" id="sel_visit_day">
+                                    <option>Domingo</option>
+                                    <option>Segunda</option>
+                                    <option>Terça</option>
+                                    <option>Quarta</option>
+                                    <option>Quinta</option>
+                                    <option>Sexta</option>
+                                    <option>Sábado</option>
+                                </select>
+                        </div>
+                        </div>
+                        <div class="form-group row "> <!--l5   --> 
+                        <div class="col-xs-6 padding-right-5">
+                                <label for="txt_cnpj">CNPJ</label>
+                                <input class="form-control" id="txt_cnpj" type="text">
+                        </div>
+                        <div class="col-xs-6 padding-left-5">
+                                <label for="txt_state_registration">Inscrição Estadual</label>
+                                <input class="form-control" id="txt_state_registration" type="text">
+                        </div>
+                        </div>
+                        <div class="form-group row "> <!--l6   --> 
+                        <div class="col-xs-6 padding-right-5 ">
+                                <label for="txt_service_branch">Ramo Atendimento</label>
+                                <input class="form-control" id="txt_service_branch" type="text">
+                        </div>
+                        <div class="col-xs-6 padding-left-5">
+                                <label for="sel_function">Função</label>
+                                <select class="form-control input-md padding-left-5" id="sel_function">
+                                    <option>Inclusão (Reativação)</option>
+                                    <option>Alteração</option>
+                                    <option>Reativação</option>
+                                    <option>Atualização</option>
+                                    <option>Inativar</option>
+                                    <option>Exclusão</option>
+                                </select>
+                        </div>
+                        </div>
+                        <div class="form-group row "> <!--l8   --> 
+                        <div class="col-xs-6 padding-right-5">
+                                <label for="sel_state">Estado</label>
+                                <select class="form-control input-md padding-right-5" id="sel_state">
+                                    <option>Java when</option>
+                                </select>
+                        </div>
+                        <div class="col-xs-6 padding-left-5">
+                                <label for="sel_city">Cidade</label>
+                                <select class="form-control input-md padding-left-5" id="sel_city">
+                                    <option>Java when2</option>
+                                </select>
+                        </div>
+                        </div>
+                        <div class="form-group row "> <!--l9  --> 
+                        <div class="col-xs-12">
+                                <label for="txt_company_neighborhood">Bairro</label>
+                                <input class="form-control" id="txt_company_neighborhood" type="text">
+                        </div>
+                        </div>
+                        <div class="form-group row "> <!--l10  --> 
+                        <div class="col-sm-10 col-xs-9 padding-right-5">
+                                <label for="txt_company_address">Endereço</label>
+                                <input class="form-control" id="txt_company_address" type="text">
+                        </div>
+                        <div class="col-sm-2 col-xs-3 padding-left-5">
+                                <label for="txt_company_number">Número</label>
+                                <input class="form-control" id="txt_company_number" type="text">
+                        </div>
+                        </div>
+                        <div class="form-group row "> <!--l11  --> 
+                        <div class="col-xs-12">
+                                <label for="txt_referency_point">Ponto de Referência</label>
+                                <input class="form-control" id="txt_referency_point" type="text">
+                        </div>
+                        </div>
+                        <div class="form-group row "> <!--l12 --> 
+                        <div class="col-xs-12">
+                                <label for="txt_onwer_name">Nome do Proprietário</label>
+                                <input class="form-control" id="txt_enwer_name" type="text">
+                        </div>
+                        </div>
+                        <div class="form-group row "> <!--l13  --> 
+                        <div class="col-xs-6 padding-right-5">
+                                <label for="txt_company_phone">Telefone</label>
+                                <input class="form-control" id="txt_company_phone" type="text">
+                        </div>
+                        <div class="col-xs-6 padding-left-5">
+                                <label for="txt_company_cellphone">Celular</label>
+                                <input class="form-control" id="txt_company_cellphone" type="text">
+                        </div>
+                        </div>
+                        <div class="form-group row "> <!--l15  --> 
+                        <div class="col-xs-12">
+                                <label for="txt_company_email">E-Mail</label>
+                                <input class="form-control" id="txt_company_email" type="text">
+                        </div>
+                        </div>
+                        <div class="form-group row "> <!--l16  --> 
+                        <div class="col-xs-12">
+                                <label for="txt_company_site">Site da Empresa</label>
+                                <input class="form-control" id="txt_company_site" type="text">
+                        </div>
+                        </div>
+                        <div class="form-group row "> <!--l17  --> 
+                        <div class="col-xs-12">
+                                <label for="txt_company_email_fiscal">E-Mail Nota Fiscal Eletronica</label>
+                                <input class="form-control" id="txt_company_email_fiscal" type="text">
+                        </div>
+                        </div>
+                    </div>
                      </form>  
                     </div>  
                 </div> <!-- //TAB DADOS EMPRESA  -->
-
                 <div id="dados_pedido" class="tab-pane fade"> <!-- TAB DADOS PEDIDO  -->
-                          
                <div class="container-fluid">  <!--container de campos formulario   -->
                  <form action="" class=""> 
                     <div class="row">
-                           
                             <div class="form-group row margin-top-5"><!-- Aba para PEDIDO -->
                            <div class="col-xs-12 nav-padding"> <!-- Aba para PEDIDO -->
                                <div class="panel panel-primary no-margin-bottom">
@@ -180,7 +313,6 @@ require_once ("backend/models/cliente.php");
                                            <a class="panel-links" data-toggle="collapse" href="#collapse_pedido"> Pedido <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
                                        </h1>
                                   </div>
-
                                    <div id="collapse_pedido" class="panel-collapse collapse">
                                        <div class="panel-body">
                                     <!--Formulario PEDIDO/collapse  -->
@@ -228,7 +360,6 @@ require_once ("backend/models/cliente.php");
                                 </div>
                            </div> <!-- //Aba para PEDIDO -->
                         </div> <!-- //Aba para PEDIDO -->
-                           
                             <div class="form-group row"><!-- Aba para ENTREGA PEDIDO -->
                            <div class="col-xs-12 nav-padding"> <!-- Aba para ENTREGA PEDIDO -->
                                <div class="panel panel-primary no-margin-bottom">
@@ -237,7 +368,6 @@ require_once ("backend/models/cliente.php");
                                            <a class="panel-links" data-toggle="collapse" href="#collapse_pedido_entrega"> Entrega <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
                                        </h1>
                                   </div>
-
                                    <div id="collapse_pedido_entrega" class="panel-collapse collapse">
                                        <div class="panel-body">
                                     <!--Formulario ENTREGA PEDIDO/collapse  -->
@@ -277,7 +407,6 @@ require_once ("backend/models/cliente.php");
                                 </div>
                            </div> <!-- //Aba para ENTREGA PEDIDO -->
                         </div> <!-- //Aba para ENTREGA PEDIDO -->
-                           
                             <div class="form-group row"><!-- Aba para COBRANÇA PEDIDO -->
                            <div class="col-xs-12 nav-padding"> <!-- Aba para COBRANÇA PEDIDO -->
                                <div class="panel panel-primary no-margin-bottom">
@@ -287,7 +416,6 @@ require_once ("backend/models/cliente.php");
                                             <span class="glyphicon glyphicon-chevron-down pull-right"></span> </a>
                                        </h1>
                                   </div>
-
                                    <div id="collapse_pedido_cobranca" class="panel-collapse collapse">
                                        <div class="panel-body">
                                     <!--Formulario COBRANÇA PEDIDO/collapse  -->
@@ -331,7 +459,6 @@ require_once ("backend/models/cliente.php");
                     </form>
                  </div>
             </div> <!-- //TAB DADOS PEDIDO  -->
-
                 <div id="informacao_adicional" class="tab-pane fade"> <!-- TAB INFORMAÇAO ADICIONAL  -->
                <div class="container-fluid">  <!--container de campos formulario   -->
                  <form action="" class=""> 
@@ -359,15 +486,9 @@ require_once ("backend/models/cliente.php");
                  </form>
                 </div>            
                 </div> <!-- //TAB INFORMAÇAO ADICIONAL  -->
-    
           </div><!--//TAB CONTENT  -->
-       
-       
-            </div>
+        </div>
     </div>
-    
-
 <?php
 require_once ("hf/footer.php");
-
 ?>
