@@ -1,4 +1,3 @@
-   
 <?php
 require_once ("hf/header.php");
 require_once ("backend/models/cliente.php");
@@ -9,10 +8,8 @@ require_once ("backend/models/cliente.php");
   <div id="page-wrapper">
       <div id="content" class="container-fluid container-ssf container-frescuras">
         <div class="row">
-               
                 <div class="col-md-12 col-xs-12 nav-padding">
-  
-                    <ul class="nav nav-tabs "> <!--TABS MENU -->
+                      <ul class="nav nav-tabs "> <!--TABS MENU -->
                         <li class="col-md-3 col-xs-3 active"><a class="icon-align-auto" href="#referencia_comercial">
                         <span class="glyphicon glyphicon-usd icon-size-26"></span>
                         <span class="hidden-sx">Ref. Comercial</span></a></li> 
