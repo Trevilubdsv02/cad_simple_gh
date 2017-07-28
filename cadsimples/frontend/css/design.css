@@ -1,0 +1,371 @@
+body {
+    background-color:#F5F5F5;
+}
+/*Trevilub Cores*/
+.trev_amarelo{
+    color: #ffd500;
+}
+.trev_azul{
+   color:#00509f;
+}
+.trev_branco{
+    color: #FFF;
+}
+.trev_azul_f{
+    background-color:#00509f;
+}
+.trev_azul_claro{
+    background-color: #0069d2;
+}
+
+/*--------------*/
+/*Menu Design*/
+.navbar-azul{
+background-color:#00509f;
+    color:#FFF;
+} 
+.navbar-borders{
+    border-radius:0px;
+}
+.navbar-measures{   /*Grossurado NAVBAR */
+    height: 60px;
+}
+.navbar-zzindex{
+    z-index: 1000;
+}
+
+        /*Medidas gerais?*/
+.navbar-marginup-items{  /* Itens do Menu TOP */
+    padding: 0 ;
+    margin-top: 13px; /*Margem itens menu*/
+}
+.navbar-marginbot-items{  /* Itens do Menu TOP */
+    padding: 0 ;
+    margin-top:0; /*Margem itens menu*/
+}
+
+.div-fmt{ /*formatação divs menu TOP*/
+    float: left;
+    margin-left: 15px;
+}
+
+
+.div-fmt2{ /*formatação divs menu TOP*/
+    float: left;
+}
+
+@media (max-width: 767px){
+    .div-fmt2 { /*formatação divs menu TOP*/
+    float: left;
+        margin-left: 15px;
+}
+}
+
+
+
+
+.trev-margin-left{ /*margin media query*/
+    margin-left: 0;
+}
+
+/*Menu Tabs*/
+.nav-padding{
+    padding-left:0; 
+    padding-right:0; 
+}
+.tab-content{
+    padding-left:15px;
+    padding-right:15px;
+}
+
+
+/*______________*/
+
+        /*______________*/
+
+
+/*--------------*/
+
+
+/*Sidebar*/
+    /*Sidebar Code?*/
+        #sidebar-wrapper{
+            position: absolute;
+            width: 0;
+            height:100%;
+            background-color:#2962FF;
+            transition: .5s ease-out;
+   
+        }
+
+        #wrapper.menuDisplayed #sidebar-wrapper{
+            width: 185px; /* Tamanho da Sidebar, alterar o tanto que a pagina vai andar */
+        }
+.zz-dex1{
+    z-index: 1;
+}
+.zz-dex2{
+    z-index: 3;
+}
+    /*--------------*/
+/*--------------*/
+
+    /*Sidebar Design*/
+.sidebar-nav{
+    padding: 0;
+    list-style: none;
+}
+.sidebar-nav li{
+text-indent:20px;
+line-height:40px;
+}
+.sidebar-nav li a{         /*lista*/
+    display: block;
+    text-decoration: none;
+    color: #F5F5F5;
+    font-family: sans-serif;
+    font-size:25px;    /*Tamano dos links sidebar*/
+    font-weight: 300;/*grossura da fonte*/
+    transition: .45s ease-out; /*tempo para sair a cor quando passar o mouse*/
+    white-space: nowrap; /*Nao quebrar o texto*/
+}
+.sidebar-nav li a:hover{ 
+    background-color: #1D46B8;   /* Sidebar cor ao passar o mouse por cima */
+    transition: .25s ease-out; /*tempo para sair a cor quando passar o mouse*/
+}
+.sidebar-ul{   
+    margin-top: 60px; /* Margem para o menu nao esconder os Links sidebar */
+}
+
+.divider{     /*Linhadivisoria*/
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.sidebar-icons{
+    display:initial; 
+}
+
+
+    /*--------------*/
+/*--------------*/   
+
+/*Pagina*/
+    /*Pagina Code?*/
+        #page-wrapper {
+            width:100%;
+            position:absolute;
+            padding:15px;
+            margin-top:60px; /* Margem para o menu nao esconder a pagina */
+            z-index:2;
+            transition: .5s ease-out;
+        }
+        #page-login {
+            width:100%;
+            height:100%;
+            position:absolute;
+            padding-left: 23%;
+            padding-right:25%;
+            padding-top: 13%; 
+            z-index:2;
+            transition: .5s ease-out;
+            background-color: #5F9AD6;
+            
+        }
+        #wrapper.menuDisplayed #page-wrapper{  
+            padding-left:200px; /* Distancia que a pagina vai andar */
+        }
+
+.container-frescuras {
+    border-radius:5px; /*Borda Redonda*/
+    box-shadow: 10px 10px 65px #212736; /*Sombra Conteudo*/
+}
+.container-ssf{
+    background-color:#FFF; /*Cor de fundo Conteudo*/
+}
+.container-cadastro{
+    border-bottom-right-radius:0; 
+    border-bottom-left-radius:0; 
+}
+
+
+
+    /*--------------*/
+/*--------------*/
+
+/*design itens menu TOP */
+.btn-menu-color {
+    background-color:#FFF; /*Cor de fundo Botão*/
+}
+.trev-text{
+    font-weight:700;
+}
+
+.btn-plus-table{
+    margin-bottom:10px;
+    margin-left: 8px;
+}
+
+/*--------------*/
+.semwrap{
+    white-space: nowrap; /*Tira a quebrade linha*/
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
+/*Pagina de cadastro*/
+
+/*Tabs*/
+
+/*ativa  */
+.nav-tabs>li.active>a{
+    background-color:#00509f;
+    color:#000000;
+}
+.nav-tabs>li.active>a:hover {
+    background-color:#00509f;
+    color:#000000;
+}
+/*  */
+.nav-tabs>li>a{
+   background-color:#0069d2;
+    color:#ffffff;
+    font-size:16px;
+    font-weight:800;
+}
+
+.nav-tabs>li>a:hover{
+   background-color:#023b75;
+}
+.nav-tabs>li{
+    padding:0;
+}
+
+/*Painel collapse pagina cadastro*/
+
+.panel-primary>.panel-heading{
+    background-color:#0069d2;
+    border-color:#0069d2;
+    padding: 8px 15px;
+}
+
+.panel-links{
+    background-color:#0069d2;
+    color:#ffffff;
+    font-size:18px;
+    font-weight:600;
+}
+.panel-primary{
+    border-color:#0069d2;
+
+}
+
+
+/*-----------*/
+/*Fonts Measures*/
+.font-size-15{
+    font-size: 15px;
+}
+.font-size-20{
+    font-size: 20px;
+}
+.font-size-25{
+    font-size: 25px;
+}
+.font-size-30{
+    font-size: 35px;
+}
+.font-size-35{
+    font-size: 35px;
+}
+.font-size-40{
+    font-size: 40px;
+}
+.font-size-50{
+    font-size: 50px;
+}
+.font-align{
+    text-align: center;
+}
+
+/*-----------*/
+
+/*Paddings measures*/
+.padding-left-5{
+    padding-left:5px;
+}
+.padding-leftright-5{
+    padding-left:5px;
+    padding-right:5px;
+}
+.padding-right-5{
+    padding-right:5px;
+}
+.padding-bot-0{
+    padding-bottom: 0;
+}
+.padding-left-25p{
+    padding-left: 25%;
+}
+.padding-right-25p{
+    padding-right: 25%;
+}
+.padding-0{
+    padding: 0;
+}
+/*-----------*/
+/*margins measures*/
+.margin-top-5{
+    margin-top: 5px;
+}
+.nav-tabs>li>a.margin-right-0{
+    margin-right: 0;
+}
+.margin-auto{
+    margin: auto;
+}
+.col-xs-6.padding-leftright-5.margin-auto{
+    margin: auto;
+}
+.no-margin-bottom{
+    margin-bottom:0;
+}
+/*-----------*/
+
+
+/*-----------*/
+textarea{
+    resize: none;
+}
+
+
+
+/*TABELA RESPONSIVA */
+
+.table-responsive{
+    border:0;
+}
+@media (max-width: 796px) {
+    .hidden-sx {
+    display: none !important;
+  }
+    .icon-size-26{
+       font-size:26px; 
+  }
+    .icon-align-auto{
+        text-align: center;
+    }    
+/*TABS changing*/
+    .nav-tabs>li>a{
+        padding-bottom: 1px;
+    }
+/*//TABS changing*/
+}
+
+a:focus{
+    text-decoration: none;
+}
